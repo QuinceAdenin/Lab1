@@ -3,7 +3,7 @@ package Event;
 import Resource.Resource;//Подключили ресурсы
 import Personnel.Personnel;//Подключили персонал
 import Schedule.Visitor;//Подлючили посетителя
-//Класс мероприятие вфывф
+//Класс мероприятие
 public class Event {
     private EventType type;
     private Resource resource;
