@@ -16,4 +16,3 @@ public class CreateEventCommand implements Command {
         schedule.addEvent(event);
     }
 }
-//яйца
