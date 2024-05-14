@@ -15,6 +15,6 @@ public class SingletonPersonnelFactory implements PersonnelFactory {
     @Override
     public Personnel createPersonnel(String role) {
         // Логика создания персонала
-        return new Personnel(role);
+        return new MyPersonnel(role);
     }
 }

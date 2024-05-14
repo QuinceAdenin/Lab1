@@ -15,6 +15,6 @@ public class SingletonResourceFactory implements ResourceFactory {
     @Override
     public Resource createResource(String description) {
         // Логика создания ресурса
-        return new Resource(description);
+        return new MyResource(description);
     }
 }

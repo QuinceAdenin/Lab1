@@ -15,8 +15,8 @@ public class SingletonEventFactory implements EventFactory {
     }
     //Создание мероприятия
     @Override
-    public Event createEvent(EventType type, Resource resource, Personnel personnel, String description) {
-        return new Event(type, resource, personnel, description);
+    public Event createEvent(EventType type, Resource myResource, Personnel personnel, String description) {
+        return new MyEvent(type, myResource, personnel, description);
     }
 }
 

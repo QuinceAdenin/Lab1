@@ -40,9 +40,9 @@ public class Main {
 
         Personnel personnel = personnelFactory.createPersonnel(personnelRole);
 
-        Resource resource = resourceFactory.createResource(resourceDescription);
+        Resource myResource = resourceFactory.createResource(resourceDescription);
         // Создаем мероприятие с помощью фабрики мероприятий и переданных данных
-        Event weddingEvent = weddingFactory.createEvent(eventType, resource, personnel, eventDescription);
+        Event weddingEvent = weddingFactory.createEvent(eventType, myResource, personnel, eventDescription);
 
         // Создаем команду для создания мероприятия
         Command createWeddingCommand = new CreateEventCommand(weddingEvent, schedule);
@@ -57,9 +57,9 @@ public class Main {
 
         Personnel personnel2 = personnelFactory.createPersonnel(personnelRole2);
 
-        Resource resource2 = resourceFactory.createResource(resourceDescription2);
+        Resource myResource2 = resourceFactory.createResource(resourceDescription2);
         // Создаем мероприятие с помощью фабрики мероприятий и переданных данных
-        Event newyearEvent = weddingFactory.createEvent(eventType2, resource2, personnel2, eventDescription2);
+        Event newyearEvent = weddingFactory.createEvent(eventType2, myResource2, personnel2, eventDescription2);
 
         // Создаем команду для создания мероприятия
         Command createnewyearCommand = new CreateEventCommand(newyearEvent, schedule);
